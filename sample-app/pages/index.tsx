@@ -6,6 +6,7 @@ import Nav from "../components/Nav";
 import styles from "../styles/Home.module.css";
 
 import Content from "data/content";
+import PropertyCard from "components/PropertyCard";
 
 const Home: NextPage = () => {
   return (
@@ -56,25 +57,37 @@ const Home: NextPage = () => {
             />
           ))}
         </div>
+
+        <section className="bg-primary text-white flex flex-col gap-4 plb-12 items-center rounded-2xl">
+          <div className="w-1/2 flex flex-col items-center text-center gap-4 pbe-6 border-b border-white">
+            <p className="w-1/2 nunito text-3xl font-bold">
+              “Yoga is the journey, of the self, through the self, to the self”
+            </p>
+            <p className="">Bhagavad Gītā, Verse 6.20</p>
+          </div>
+          <div className="w-1/2 flex flex-col gap-6 items-center">
+            <p className="w-2/3">
+              Yoga is the ancient Indian science of healthy living - harmonizing
+              the relationship between mind, body and environment. Much more
+              than a physical exercise, it is a disciplined and holistic
+              lifestyle that includes of a variety of practices.
+            </p>
+            <p className="w-2/3">
+              {" "}
+              Traditional Yoga is a combination of Ethical Rules (Yamas),
+              Personal Observances (Niyamas), Posture (Āsana), Breathing
+              (Prāṇāyāma), Withdrawal (Pratyāhāra), Concentration (Dhāraṇā) and
+              Meditation (Dhyāna).
+            </p>{" "}
+            <p className="w-2/3">
+              {" "}
+              Our Sādhanā (Daily Practice) is designed for you to incorporate
+              this Yogic lifestyle through short lessons, which can be viewed at
+              your convenience.
+            </p>
+          </div>
+        </section>
       </main>
-    </div>
-  );
-};
-
-export interface PropertyProps {
-  icon: string;
-  title: string;
-  subtitle: string;
-}
-
-const PropertyCard = (props: PropertyProps) => {
-  return (
-    <div className="w-60 flex flex-col gap-4 items-center nunito text-center my-8">
-      <div className="relative h-12 w-12">
-        <Image src={props.icon} layout="fill" />
-      </div>
-      <p className="font-bold text-xl">{props.title}</p>
-      <p>{props.subtitle}</p>
     </div>
   );
 };

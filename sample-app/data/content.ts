@@ -1,4 +1,4 @@
-import { PropertyProps } from "../pages";
+import { PropertyProps } from "components/PropertyCard";
 
 const PropertiesOfYoga: PropertyProps[] = [
   {
