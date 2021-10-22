@@ -15,7 +15,18 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <Nav/>
+        <Nav />
+
+        <div className="flex flex-col bg-pink-200 items-center justify-center">
+          <div className="relative w-60 h-80">
+            <Image src="/ui/main-image.png" layout="fill"></Image>
+          </div>
+          <h3 className="text-3xl font-bold nunito">Live a Yogic Lifestyle</h3>
+          <p>
+            A Daily Practice consisting of Yoga, Meditation, Chanting and
+            Relaxation Techniques, led by Traditional Indian Practitioners.
+          </p>
+        </div>
       </main>
     </div>
   );
