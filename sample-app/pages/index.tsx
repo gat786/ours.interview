@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "../components/Nav";
+import { SocialIcon } from "react-social-icons";
 import styles from "../styles/Home.module.css";
 
 import Content from "data/content";
@@ -212,6 +213,30 @@ const Home: NextPage = () => {
           </div>
         </section>
       </main>
+
+      <footer className="h-20 flex justify-center border-t">
+        <div className="w-11/12 flex justify-between mbs-4 gap-4">
+          <div className="flex gap-4">
+            <div className="relative h-8 w-8">
+              <Image src="/socials/discord.png" layout="fill" />
+            </div>
+            <div className="relative h-8 w-8">
+              <Image src="/socials/instagram.png" layout="fill" />
+            </div>
+            <div className="relative h-8 w-8">
+              <Image src="/socials/spotify.png" layout="fill" />
+            </div>
+          </div>
+
+          <div className="flex gap-4">
+            <p>Privacy</p>
+            <p>Terms</p>
+            <p>Contact</p>
+          </div>
+
+          <div>&#169; OURS Community 2021</div>
+        </div>
+      </footer>
     </div>
   );
 };
