@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import styles from "components/components.module.css";
 export interface SadhanaCardProps {
   title: string;
   icon: string;
@@ -27,7 +28,7 @@ const SadhanaCard = (props: SadhanaCardProps) => {
         </div>
       </div>
 
-      <div className="relative text-gray-800">
+      <div className={`relative text-gray-800 ${styles.sadhanaCardText}`}>
         <p className="absolute top-0 right-0 text-primary">
           {props.minutes} min
         </p>

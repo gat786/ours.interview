@@ -1,0 +1,21 @@
+.manifestList li:not(:last-child)::after{
+    content: '.';
+    display: block;
+}
+
+.checkMarker{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.checkMarker li {
+  display: flex;
+  gap: .5rem;  
+}
+
+.checkMarker li:before{
+    font-size: 1rem;
+    font-family: 'Material Icons';
+    content: 'check_circle_outline';
+}

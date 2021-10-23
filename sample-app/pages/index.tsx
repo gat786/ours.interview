@@ -97,7 +97,7 @@ const Home: NextPage = () => {
           <p className="text-3xl nunito font-bold mbe-2 ">Sādhāna</p>
           <p>Your Daily Practice for Holistic Wellbeing</p>
 
-          <div>
+          <div className="flex flex-col gap-6 mlb-8">
             {Content.Sadhanas.map(
               (sadhana): ReactElement => (
                 <SadhanaCard
@@ -142,7 +142,7 @@ const Home: NextPage = () => {
         <section className="bg-primary text-white flex flex-col plb-12 items-center rounded-2xl">
           <p className="nunito text-3xl mbe-9 font-bold">Manifesto</p>
           <div className="w-1/2 flex flex-col  items-center">
-            <ul className="text-center text-sm mbe-8">
+            <ul className={`text-center text-sm mbe-8 ${styles.manifestList}`}>
               <li>Living through love, not fear</li>
               <li>Learning the language of being human.</li>
               <li>
@@ -167,13 +167,13 @@ const Home: NextPage = () => {
             12 weeks - 90 Days - 5400 Hours
           </p>
 
-          <div className="w-1/2 grid grid-cols-2 grid-flow-row items-start">
-            <div className="w-2/3 justify-self-center bg-gray-200 text-center rounded-xl p-4">
+          <div className="w-1/2 grid grid-cols-2 grid-flow-col-dense items-start">
+            <div className="w-2/5 justify-self-center bg-gray-200 text-center rounded-xl p-4">
               $500
             </div>
-            <div className="text-sm">
-              <span className="font-medium text-base">What's included?</span>
-              <ul>
+            <div className="text-sm flex flex-col gap-2">
+              <div className="font-medium text-base">What's included?</div>
+              <ul className={`${styles.checkMarker}`}>
                 <li>24 Hatha Yoga Lessons</li>
                 <li>12 Guided Meditation Lessons</li>
                 <li>12 Yoga Nidra Lessons</li>
@@ -184,11 +184,13 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <button className="bg-primary p-4 rounded-xl text-white nunito">
-            Start 7 Day Free Trial
-          </button>
+          <div className="flex flex-col gap-2 items-center mbe-8">
+            <button className="bg-primary p-4 rounded-xl text-white nunito">
+              Start 7 Day Free Trial
+            </button>
 
-          <p className="text-gray-700">No Credit Card Required</p>
+            <p className="text-gray-700">No Credit Card Required</p>
+          </div>
 
           <p className="text-primary font-bold">
             You won’t be charged anything today
@@ -198,9 +200,9 @@ const Home: NextPage = () => {
 
         <section className="flex flex-col items-center">
           <div className="flex items-center gap-6 justify-center">
-            <div className="bg-gray-200 w-1/3 h-0.5"></div>
+            <div className="bg-gray-800 w-1/3 h-0.5"></div>
             <p className="nunito font-bold text-3xl">FAQs</p>
-            <div className="h-0.5 bg-gray-200 w-1/3"></div>
+            <div className="h-0.5 bg-gray-800 w-1/3"></div>
           </div>
 
           <div className="w-1/2">
