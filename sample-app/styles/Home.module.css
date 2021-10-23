@@ -19,3 +19,17 @@
     font-family: 'Material Icons';
     content: 'check_circle_outline';
 }
+
+.sideDots > div{
+    position: relative;
+}
+
+.sideDots > div:not(:first)::before{
+    position: absolute;
+    content: '';
+    left: -10px;
+    top: 0px;
+    height: 100px;
+    width: 2px;
+    background: #000;
+}

@@ -96,7 +96,7 @@ const Home: NextPage = () => {
           <p className="text-3xl nunito font-bold mbe-2 ">Sādhāna</p>
           <p>Your Daily Practice for Holistic Wellbeing</p>
 
-          <div className="flex flex-col gap-6 mlb-8">
+          <div className={`flex flex-col gap-6 mlb-8 ${styles.sideDots}`}>
             {Content.Sadhanas.map(
               (sadhana): ReactElement => (
                 <SadhanaCard
@@ -168,8 +168,8 @@ const Home: NextPage = () => {
             12 weeks - 90 Days - 5400 Hours
           </p>
 
-          <div className="w-1/2 grid grid-cols-2 grid-flow-col-dense items-start">
-            <div className="w-2/5 justify-self-center bg-gray-200 text-center rounded-xl p-4">
+          <div className="w-11/12 md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+            <div className=" w-full justify-self-center text-3xl font-bold bg-gray-200 text-center rounded-xl p-4">
               $500
             </div>
             <div className="text-sm flex flex-col gap-2">
@@ -206,7 +206,7 @@ const Home: NextPage = () => {
             <div className="h-0.5 bg-gray-200 w-1/4"></div>
           </div>
 
-          <div className="w-1/2">
+          <div className="w-11/12 md:w-1/2">
             {Content.FAQs.map((faq) => (
               <FrequentlyAskedQuestion
                 question={faq.question}
