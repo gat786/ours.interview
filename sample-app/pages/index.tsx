@@ -111,6 +111,28 @@ const Home: NextPage = () => {
             )}
           </div>
         </section>
+
+        <section className="bg-primary text-white flex flex-col plb-12 items-center rounded-2xl">
+          <p className="nunito text-3xl mbe-9 font-bold">Manifesto</p>
+          <div className="w-1/2 flex flex-col  items-center">
+            <ul className="text-center text-sm mbe-8">
+              <li>Living through love, not fear</li>
+              <li>Learning the language of being human.</li>
+              <li>
+                Transcending the ego by venturing into uncharted territory
+              </li>
+              <li>Returning to our roots to uncover lost truths</li>
+              <li>Sharing knowledge to empower others</li>
+              <li>Living in sync with nature</li>
+            </ul>
+
+            <p className="text-center text-sm">
+              Our vision is to share ancient Indian wisdom in an accessible and
+              authentic manner, empowering people to cultivate inner peace and
+              compassion in their everyday lives.
+            </p>
+          </div>
+        </section>
       </main>
     </div>
   );
@@ -144,7 +166,9 @@ export const SadhanaCard = (props: SadhanaCardProps) => {
       </div>
 
       <div className="relative">
-        <p className="absolute top-0 right-0 text-primary">{props.minutes} min</p>
+        <p className="absolute top-0 right-0 text-primary">
+          {props.minutes} min
+        </p>
         <p className="font-bold nunito text-xl mbe-1 ">{props.title}</p>
         {props.leadBy ? (
           <div className="mbe-4">
