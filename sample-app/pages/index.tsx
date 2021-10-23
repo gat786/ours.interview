@@ -9,6 +9,8 @@ import Content from "data/content";
 import PropertyCard from "components/PropertyCard";
 import { ReactElement } from "react";
 import SadhanaCard from "components/SadhanaCard";
+import React from "react";
+import FrequentlyAskedQuestion from "components/FaqComponent";
 
 const Home: NextPage = () => {
   return (
@@ -158,7 +160,7 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section className="flex flex-col items-center">
+        <section className="flex flex-col gap-6 items-center mlb-16">
           <p className="text-3xl nunito font-bold">Programme Cost</p>
           <p className="text-sm text-gray-800">
             12 weeks - 90 Days - 5400 Hours
@@ -168,8 +170,8 @@ const Home: NextPage = () => {
             <div className="w-2/3 justify-self-center bg-gray-200 text-center rounded-xl p-4">
               $500
             </div>
-            <div>
-              What's included?
+            <div className="text-sm">
+              <span className="font-medium text-base">What's included?</span>
               <ul>
                 <li>24 Hatha Yoga Lessons</li>
                 <li>12 Guided Meditation Lessons</li>
@@ -191,6 +193,23 @@ const Home: NextPage = () => {
             You won’t be charged anything today
           </p>
           <p>Only after the free trial, on the 8th day of the programme.</p>
+        </section>
+
+        <section className="flex flex-col items-center">
+          <div className="flex items-center gap-6 justify-center">
+            <div className="bg-gray-200 w-1/3 h-0.5"></div>
+            <p className="nunito font-bold text-3xl">FAQs</p>
+            <div className="h-0.5 bg-gray-200 w-1/3"></div>
+          </div>
+
+          <div className="w-1/2">
+            {Content.FAQs.map((faq) => (
+              <FrequentlyAskedQuestion
+                question={faq.question}
+                answer={faq.answer}
+              />
+            ))}
+          </div>
         </section>
       </main>
     </div>
