@@ -1,5 +1,5 @@
 import { PropertyProps } from "components/PropertyCard";
-import { SadhanaCardProps } from "pages";
+import { SadhanaCardProps } from "components/SadhanaCard";
 
 const PropertiesOfYoga: PropertyProps[] = [
   {
@@ -65,4 +65,22 @@ const Sadhanas: SadhanaCardProps[] = [
   },
 ];
 
-export default { PropertiesOfYoga, Sadhanas };
+const Benefits: PropertyProps[] = [
+  {
+    title: "Physical Wellbeing",
+    icon: "/ui/yoga-sutra.png",
+    subtitle: "Increased flexibility, stamina and physical strength",
+  },
+  {
+    title: "Mental Wellbeing",
+    icon: "/ui/compassion.png",
+    subtitle: "Improved emotional stability and clarity of thought",
+  },
+  {
+    title: "Spiritual Wellbeing",
+    icon: "/ui/atom.png",
+    subtitle: "Enhanced sense of positivity, intuition and gratitude",
+  },
+];
+
+export default { PropertiesOfYoga, Sadhanas, Benefits };

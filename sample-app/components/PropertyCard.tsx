@@ -13,7 +13,7 @@ export interface PropertyProps {
           <Image src={props.icon} layout="fill" />
         </div>
         <p className="font-bold text-xl">{props.title}</p>
-        <p>{props.subtitle}</p>
+        <p className="text-gray-700">{props.subtitle}</p>
       </div>
     );
   };

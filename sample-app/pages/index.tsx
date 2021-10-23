@@ -111,7 +111,30 @@ const Home: NextPage = () => {
               )
             )}
           </div>
+
+          <div className="text-gray-800">
+            <strong>Please note: </strong>
+            The above timings are recommendations only. These techniques can be
+            practiced at any time in the day
+          </div>
         </section>
+
+        <div className="flex items-center gap-6 justify-center">
+          <div className="bg-gray-200 w-1/3 h-0.5"></div>
+          <p className="nunito font-bold text-3xl">Benefits</p>
+          <div className="h-0.5 bg-gray-200 w-1/3"></div>
+        </div>
+
+        <div className="flex justify-center gap-28">
+          {Content.Benefits.map((property, index) => (
+            <PropertyCard
+              key={index}
+              icon={property.icon}
+              title={property.title}
+              subtitle={property.subtitle}
+            />
+          ))}
+        </div>
 
         <section className="bg-primary text-white flex flex-col plb-12 items-center rounded-2xl">
           <p className="nunito text-3xl mbe-9 font-bold">Manifesto</p>

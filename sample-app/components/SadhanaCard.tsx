@@ -27,7 +27,7 @@ const SadhanaCard = (props: SadhanaCardProps) => {
         </div>
       </div>
 
-      <div className="relative">
+      <div className="relative text-gray-800">
         <p className="absolute top-0 right-0 text-primary">
           {props.minutes} min
         </p>
