@@ -1,35 +1,42 @@
-.manifestList li:not(:last-child)::after{
-    content: '.';
-    display: block;
+.manifestList li:not(:last-child)::after {
+  content: ".";
+  display: block;
 }
 
-.checkMarker{
-    display: flex;
-    flex-direction: column;
-    gap: .25rem;
+.checkMarker {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .sadhanaCardWidth {
+    width: 32rem;
+  }
 }
 
 .checkMarker li {
   display: flex;
-  gap: .5rem;  
+  gap: 0.5rem;
 }
 
-.checkMarker li:before{
-    font-size: 1rem;
-    font-family: 'Material Icons';
-    content: 'check_circle_outline';
+.checkMarker li:before {
+  font-size: 1rem;
+  font-family: "Material Icons";
+  content: "check_circle_outline";
 }
 
-.sideDots > div{
-    position: relative;
+.sideDots > div {
+  position: relative;
 }
 
-.sideDots > div:not(:first)::before{
-    position: absolute;
-    content: '';
-    left: -10px;
-    top: 0px;
-    height: 100px;
-    width: 2px;
-    background: #000;
+.sideDots:c:not(:first)::before {
+  position: absolute;
+  content: "";
+  left: -10px;
+  top: 0px;
+  height: 112%;
+  width: 2px;
+  border-color: red;
+  border: 1px solid;
 }

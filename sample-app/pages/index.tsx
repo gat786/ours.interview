@@ -114,7 +114,7 @@ const Home: NextPage = () => {
             )}
           </div>
 
-          <div className="text-gray-800">
+          <div className={`text-gray-800 w-60 ${styles.sadhanaCardWidth}`}>
             <strong>Please note: </strong>
             The above timings are recommendations only. These techniques can be
             practiced at any time in the day
@@ -218,7 +218,7 @@ const Home: NextPage = () => {
       </main>
 
       <footer className="h-20 flex justify-center border-t">
-        <div className="w-11/12 flex justify-between mbs-4 gap-4">
+        <div className="w-11/12 flex flex-col items-center md:items-start md:flex-row justify-between mbs-4 gap-4">
           <div className="flex gap-4">
             <div className="relative h-8 w-8">
               <Image src="/socials/discord.png" layout="fill" />
