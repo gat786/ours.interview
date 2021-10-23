@@ -157,6 +157,41 @@ const Home: NextPage = () => {
             </p>
           </div>
         </section>
+
+        <section className="flex flex-col items-center">
+          <p className="text-3xl nunito font-bold">Programme Cost</p>
+          <p className="text-sm text-gray-800">
+            12 weeks - 90 Days - 5400 Hours
+          </p>
+
+          <div className="w-1/2 grid grid-cols-2 grid-flow-row items-start">
+            <div className="w-2/3 justify-self-center bg-gray-200 text-center rounded-xl p-4">
+              $500
+            </div>
+            <div>
+              What's included?
+              <ul>
+                <li>24 Hatha Yoga Lessons</li>
+                <li>12 Guided Meditation Lessons</li>
+                <li>12 Yoga Nidra Lessons</li>
+                <li>6 Mantra Chants</li>
+                <li>Access to OURS for 180 Days</li>
+                <li>Upcoming Features & Content</li>
+              </ul>
+            </div>
+          </div>
+
+          <button className="bg-primary p-4 rounded-xl text-white nunito">
+            Start 7 Day Free Trial
+          </button>
+
+          <p className="text-gray-700">No Credit Card Required</p>
+
+          <p className="text-primary font-bold">
+            You won’t be charged anything today
+          </p>
+          <p>Only after the free trial, on the 8th day of the programme.</p>
+        </section>
       </main>
     </div>
   );
