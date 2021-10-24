@@ -25,7 +25,7 @@ const Home: NextPage = () => {
       <main>
         <Nav />
 
-        <div className="flex flex-col gap-6 items-center justify-center mlb-32">
+        <div className="flex flex-col gap-6 items-center justify-center h-screen">
           <div className="relative w-60 h-80">
             <Image src="/ui/main-image.png" layout="fill"></Image>
           </div>
@@ -45,9 +45,9 @@ const Home: NextPage = () => {
 
         <section className="flex flex-col items-center w-full">
           <div className="flex w-5/6 md:w-1/2 justify-center items-center gap-6">
-            <div className="bg-black w-20 md:w-1/4 h-px"></div>
+            <div className="bg-black w-20 md:flex-grow h-px"></div>
             <div className="nunito font-bold text-3xl">Why OURS?</div>
-            <div className="h-px bg-black w-20 md:w-1/4"></div>
+            <div className="h-px bg-black w-20 md:flex-grow"></div>
           </div>
 
           <div className="grid grid-cols-1 justify-self-center md:grid-cols-3 md:w-2/3 md:gap-8">
@@ -69,7 +69,7 @@ const Home: NextPage = () => {
             </p>
             <p className="">Bhagavad Gītā, Verse 6.20</p>
           </div>
-          <div className="w-11/12 lg:w-1/2 flex flex-col gap-6 items-center">
+          <div className="w-11/12 lg:w-1/2 flex flex-col gap-6 mlb-4 items-center">
             <p className="md:w-2/3">
               Yoga is the ancient Indian science of healthy living - harmonizing
               the relationship between mind, body and environment. Much more
@@ -96,7 +96,9 @@ const Home: NextPage = () => {
           <p className="text-3xl nunito font-bold mbe-2 ">Sādhāna</p>
           <p>Your Daily Practice for Holistic Wellbeing</p>
 
-          <div className={`flex flex-col gap-6 mlb-8 ${styles.sideDots}`}>
+          <div
+            className={`flex flex-col items-center gap-6 mlb-8 ${styles.sideDots}`}
+          >
             {Content.Sadhanas.map(
               (sadhana): ReactElement => (
                 <SadhanaCard
@@ -114,7 +116,9 @@ const Home: NextPage = () => {
             )}
           </div>
 
-          <div className={`text-gray-800 w-60 ${styles.sadhanaCardWidth}`}>
+          <div
+            className={`text-gray-800 w-10/12 md:w-60 ${styles.sadhanaCardWidth}`}
+          >
             <strong>Please note: </strong>
             The above timings are recommendations only. These techniques can be
             practiced at any time in the day

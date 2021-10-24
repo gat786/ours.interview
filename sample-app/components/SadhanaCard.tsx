@@ -18,7 +18,7 @@ const SadhanaCard = (props: SadhanaCardProps) => {
     <div className="flex md:flex-row flex-col gap-9">
       <div
         style={{ backgroundColor: props.cardBg }}
-        className="w-60 h-44 flex-shrink-0 rounded-3xl flex flex-col relative items-center justify-center"
+        className="w-full md:w-60 h-44 flex-shrink-0 rounded-3xl flex flex-col relative items-center justify-center"
       >
         <div className="relative h-2/3 w-2/3 md:h-1/2 md:w-2/3">
           <Image src={props.icon} className="object-contain" layout="fill" />

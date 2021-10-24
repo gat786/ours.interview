@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <nav className="flex sticky top-0 bg-white items-center justify-between p-4">
+    <nav className="flex sticky z-50 top-0 bg-white items-center justify-between p-4">
       <div className="flex items-center gap-2">
         <Image src={"/logo.png"} height={32} width={32} />
         <p className="uppercase">Ours</p>
