@@ -30,13 +30,43 @@
   position: relative;
 }
 
-.sideDots:c:not(:first)::before {
+.sideDots > div::after {
+  position: absolute;
+  top: 50%;
+  left: -2.4rem;
+  content: '';
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+  background-color: rgba(215, 215, 215, 1);
+}
+
+.sideDots > div:not(:first-child, :last-child)::before {
   position: absolute;
   content: "";
-  left: -10px;
+  left: -2rem;
   top: 0px;
-  height: 112%;
+  height: 115%;
   width: 2px;
-  border-color: red;
-  border: 1px solid;
+  background-color: rgba(215, 215, 215, 1);
+}
+
+.sideDots > div:first-child::before {
+  position: absolute;
+  content: "";
+  left: -2rem;
+  top: 50%;
+  height: 70%;
+  width: 2px;
+  background-color: rgba(215, 215, 215, 1);
+}
+
+.sideDots > div:last-child::before {
+  position: absolute;
+  content: "";
+  left: -2rem;
+  top: -20%;
+  height: 70%;
+  width: 2px;
+  background-color: rgba(215, 215, 215, 1);
 }

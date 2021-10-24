@@ -1,9 +1,9 @@
-@media screen and (min-width: 768px) {
-  .sadhanaCardText {
-    width: 20rem;
-  }
+.sadhanaCardText {
+  width: 20rem;
 }
 
-.sadhanaCardText{
+@media screen and (max-width: 768px) {
+  .sadhanaCardText {
     width: 15rem;
+  }
 }
