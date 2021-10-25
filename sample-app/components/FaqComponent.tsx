@@ -1,5 +1,7 @@
 import React from "react";
 
+import styles from "components/components.module.css";
+
 export interface FAQModel {
   question: string;
   answer: string;
@@ -26,8 +28,14 @@ const FrequentlyAskedQuestion = (props: FAQModel) => {
           expand_less
         </i>
       </div>
-      <div className={`mlb-4 text-sm text-gray-700 ${isOpen ? `` : "hidden"}`}>
-        <div>{props.answer}</div>
+      <div
+        className={`text-sm ${
+          styles.transitionDuration
+        } duration-300 text-gray-700 ${
+          isOpen ? `${styles.openGracefully}` : "max-h-0 overflow-hidden mlb-0"
+        }`}
+      >
+        {props.answer}
       </div>
     </div>
   );

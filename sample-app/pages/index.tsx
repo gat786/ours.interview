@@ -126,10 +126,10 @@ const Home: NextPage = () => {
         </section>
 
         <section className="grid grid-flow-row">
-          <div className="w-1/2 flex items-center justify-self-center gap-6 justify-center">
-            <div className="bg-gray-200 w-1/4 h-0.5"></div>
-            <p className="nunito font-bold text-3xl">Benefits</p>
-            <div className="h-0.5 bg-gray-200 w-1/4"></div>
+          <div className="flex w-5/6 md:w-1/2 justify-self-center justify-center items-center gap-6">
+            <div className="bg-black w-20 md:flex-grow h-px"></div>
+            <div className="nunito font-bold text-3xl">Benefits</div>
+            <div className="h-px bg-black w-20 md:flex-grow"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 md:w-2/3 justify-self-center md:gap-8">
@@ -173,7 +173,7 @@ const Home: NextPage = () => {
           </p>
 
           <div className="w-11/12 md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
-            <div className=" w-full justify-self-center text-3xl font-bold bg-gray-200 text-center rounded-xl p-4">
+            <div className="w-1/2 justify-self-center text-3xl font-bold bg-gray-200 text-center rounded-xl p-4">
               $500
             </div>
             <div className="text-sm flex flex-col gap-2">
@@ -204,13 +204,13 @@ const Home: NextPage = () => {
         </section>
 
         <section className="flex flex-col items-center">
-          <div className="w-1/2 flex items-center gap-6 justify-center">
-            <div className="bg-gray-200 w-1/4 h-0.5"></div>
-            <p className="nunito font-bold text-3xl">FAQs</p>
-            <div className="h-0.5 bg-gray-200 w-1/4"></div>
+          <div className="flex w-5/6 md:w-1/2 justify-self-center justify-center items-center gap-6">
+            <div className="bg-black w-20 md:flex-grow h-px"></div>
+            <div className="nunito font-bold text-3xl">Benefits</div>
+            <div className="h-px bg-black w-20 md:flex-grow"></div>
           </div>
 
-          <div className="w-11/12 md:w-1/2">
+          <div className="w-11/12 md:w-1/3 mlb-8">
             {Content.FAQs.map((faq) => (
               <FrequentlyAskedQuestion
                 question={faq.question}
